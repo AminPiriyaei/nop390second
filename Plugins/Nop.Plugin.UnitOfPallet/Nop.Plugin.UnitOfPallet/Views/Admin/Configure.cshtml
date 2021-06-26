@@ -1,0 +1,78 @@
+﻿@model Nop.Plugin.UnitOfPallet.Model.ConfigurationModel
+@using Nop.Web.Framework;
+
+@{
+    Layout = "";
+}
+@Html.Action("StoreScopeConfiguration", "Setting", new { area = "Admin" })
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <div class="content-header">
+        <div class="wrapper">
+            <h1 class="title-header is-dual">
+                ماژول UnitOfWallet <small>تنظیمات</small>
+            </h1>
+            <div class="buttons-header">
+                <button type="submit" name="save" class="btn btn-sm btn-primary">
+                    <i class="fas fa-save"></i>
+                    @T("Admin.Common.Save")
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="form-horizontal">
+            <div class="panel-group">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        تنظیمات UnitOfWallet
+                    </div>
+                    <div class="panel-body">
+                        <div class="form-group">
+                            <div class="col-md-3">
+                                @Html.NopLabelFor(model => model.SpecialAttributeId)
+                            </div>
+                            <div class="col-md-3">
+                                @Html.NopDropDownListFor(model => model.SpecialAttributeId, Model.AvailableAttributes)
+                                @Html.ValidationMessageFor(model => model.SpecialAttributeId)
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <div class="col-md-3">
+                                @Html.NopLabelFor(model => model.Description)
+                            </div>
+                            <div class="col-md-3">
+                                @Html.NopTextAreaFor(model => model.Description)
+                                @Html.ValidationMessageFor(model => model.Description)
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-3">
+                                @Html.NopLabelFor(model => model.Weight)
+                            </div>
+                            <div class="col-md-3">
+                                @Html.NopTextAreaFor(model => model.Weight)
+                                @Html.ValidationMessageFor(model => model.Weight)
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-3">
+                                @Html.NopLabelFor(model => model.Price)
+                            </div>
+                            <div class="col-md-3">
+                                @Html.NopTextAreaFor(model => model.Price)
+                                @Html.ValidationMessageFor(model => model.Price)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}

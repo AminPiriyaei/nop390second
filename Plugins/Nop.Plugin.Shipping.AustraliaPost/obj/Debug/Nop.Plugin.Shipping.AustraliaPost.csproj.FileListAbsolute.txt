@@ -1,0 +1,12 @@
+D:\Nop390\Presentation\Nop.Web\Plugins\Shipping.AustraliaPost\Views\Configure.cshtml
+D:\Nop390\Presentation\Nop.Web\Plugins\Shipping.AustraliaPost\Description.txt
+D:\Nop390\Presentation\Nop.Web\Plugins\Shipping.AustraliaPost\web.config
+D:\Nop390\Presentation\Nop.Web\Plugins\Shipping.AustraliaPost\logo.jpg
+D:\Nop390\Presentation\Nop.Web\Plugins\Shipping.AustraliaPost\Nop.Plugin.Shipping.AustraliaPost.dll.config
+D:\Nop390\Presentation\Nop.Web\Plugins\Shipping.AustraliaPost\Nop.Plugin.Shipping.AustraliaPost.dll
+D:\Nop390\Presentation\Nop.Web\Plugins\Shipping.AustraliaPost\Nop.Plugin.Shipping.AustraliaPost.pdb
+D:\Nop390\Plugins\Nop.Plugin.Shipping.AustraliaPost\obj\Debug\Nop.Plugin.Shipping.AustraliaPost.csproj.App.config
+D:\Nop390\Plugins\Nop.Plugin.Shipping.AustraliaPost\obj\Debug\Nop.Plugin.Shipping.AustraliaPost.csproj.AssemblyReference.cache
+D:\Nop390\Plugins\Nop.Plugin.Shipping.AustraliaPost\obj\Debug\Nop.Plugin.Shipping.AustraliaPost.csproj.CoreCompileInputs.cache
+D:\Nop390\Plugins\Nop.Plugin.Shipping.AustraliaPost\obj\Debug\Nop.Plugin.Shipping.AustraliaPost.dll
+D:\Nop390\Plugins\Nop.Plugin.Shipping.AustraliaPost\obj\Debug\Nop.Plugin.Shipping.AustraliaPost.pdb

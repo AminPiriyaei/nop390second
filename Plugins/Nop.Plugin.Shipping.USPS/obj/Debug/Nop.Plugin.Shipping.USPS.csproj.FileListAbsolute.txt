@@ -1,0 +1,12 @@
+D:\Nop390\Presentation\Nop.Web\Plugins\Shipping.USPS\Views\Configure.cshtml
+D:\Nop390\Presentation\Nop.Web\Plugins\Shipping.USPS\web.config
+D:\Nop390\Presentation\Nop.Web\Plugins\Shipping.USPS\Description.txt
+D:\Nop390\Presentation\Nop.Web\Plugins\Shipping.USPS\logo.jpg
+D:\Nop390\Presentation\Nop.Web\Plugins\Shipping.USPS\Nop.Plugin.Shipping.USPS.dll.config
+D:\Nop390\Presentation\Nop.Web\Plugins\Shipping.USPS\Nop.Plugin.Shipping.USPS.dll
+D:\Nop390\Presentation\Nop.Web\Plugins\Shipping.USPS\Nop.Plugin.Shipping.USPS.pdb
+D:\Nop390\Plugins\Nop.Plugin.Shipping.USPS\obj\Debug\Nop.Plugin.Shipping.USPS.csproj.App.config
+D:\Nop390\Plugins\Nop.Plugin.Shipping.USPS\obj\Debug\Nop.Plugin.Shipping.USPS.csproj.CoreCompileInputs.cache
+D:\Nop390\Plugins\Nop.Plugin.Shipping.USPS\obj\Debug\Nop.Plugin.Shipping.USPS.dll
+D:\Nop390\Plugins\Nop.Plugin.Shipping.USPS\obj\Debug\Nop.Plugin.Shipping.USPS.pdb
+D:\Nop390\Plugins\Nop.Plugin.Shipping.USPS\obj\Debug\Nop.Plugin.Shipping.USPS.csproj.AssemblyReference.cache

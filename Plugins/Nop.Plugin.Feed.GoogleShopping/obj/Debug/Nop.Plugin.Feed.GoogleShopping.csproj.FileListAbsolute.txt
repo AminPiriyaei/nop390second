@@ -1,0 +1,13 @@
+D:\Nop390\Presentation\Nop.Web\Plugins\Feed.GoogleShopping\Content\styles.css
+D:\Nop390\Presentation\Nop.Web\Plugins\Feed.GoogleShopping\Views\Configure.cshtml
+D:\Nop390\Presentation\Nop.Web\Plugins\Feed.GoogleShopping\Description.txt
+D:\Nop390\Presentation\Nop.Web\Plugins\Feed.GoogleShopping\web.config
+D:\Nop390\Presentation\Nop.Web\Plugins\Feed.GoogleShopping\logo.jpg
+D:\Nop390\Presentation\Nop.Web\Plugins\Feed.GoogleShopping\Nop.Plugin.Feed.GoogleShopping.dll.config
+D:\Nop390\Presentation\Nop.Web\Plugins\Feed.GoogleShopping\Nop.Plugin.Feed.GoogleShopping.dll
+D:\Nop390\Presentation\Nop.Web\Plugins\Feed.GoogleShopping\Nop.Plugin.Feed.GoogleShopping.pdb
+D:\Nop390\Plugins\Nop.Plugin.Feed.GoogleShopping\obj\Debug\Nop.Plugin.Feed.GoogleShopping.csproj.App.config
+D:\Nop390\Plugins\Nop.Plugin.Feed.GoogleShopping\obj\Debug\Nop.Plugin.Feed.GoogleShopping.csproj.CoreCompileInputs.cache
+D:\Nop390\Plugins\Nop.Plugin.Feed.GoogleShopping\obj\Debug\Nop.Plugin.Feed.GoogleShopping.dll
+D:\Nop390\Plugins\Nop.Plugin.Feed.GoogleShopping\obj\Debug\Nop.Plugin.Feed.GoogleShopping.pdb
+D:\Nop390\Plugins\Nop.Plugin.Feed.GoogleShopping\obj\Debug\Nop.Plugin.Feed.GoogleShopping.csproj.AssemblyReference.cache

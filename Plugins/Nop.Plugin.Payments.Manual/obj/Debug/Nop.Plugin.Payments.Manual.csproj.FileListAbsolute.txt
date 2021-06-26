@@ -1,0 +1,13 @@
+D:\Nop390\Presentation\Nop.Web\Plugins\Payments.Manual\Views\Configure.cshtml
+D:\Nop390\Presentation\Nop.Web\Plugins\Payments.Manual\Views\PaymentInfo.cshtml
+D:\Nop390\Presentation\Nop.Web\Plugins\Payments.Manual\Description.txt
+D:\Nop390\Presentation\Nop.Web\Plugins\Payments.Manual\web.config
+D:\Nop390\Presentation\Nop.Web\Plugins\Payments.Manual\logo.jpg
+D:\Nop390\Presentation\Nop.Web\Plugins\Payments.Manual\Nop.Plugin.Payments.Manual.dll.config
+D:\Nop390\Presentation\Nop.Web\Plugins\Payments.Manual\Nop.Plugin.Payments.Manual.dll
+D:\Nop390\Presentation\Nop.Web\Plugins\Payments.Manual\Nop.Plugin.Payments.Manual.pdb
+D:\Nop390\Plugins\Nop.Plugin.Payments.Manual\obj\Debug\Nop.Plugin.Payments.Manual.csproj.App.config
+D:\Nop390\Plugins\Nop.Plugin.Payments.Manual\obj\Debug\Nop.Plugin.Payments.Manual.csproj.AssemblyReference.cache
+D:\Nop390\Plugins\Nop.Plugin.Payments.Manual\obj\Debug\Nop.Plugin.Payments.Manual.csproj.CoreCompileInputs.cache
+D:\Nop390\Plugins\Nop.Plugin.Payments.Manual\obj\Debug\Nop.Plugin.Payments.Manual.dll
+D:\Nop390\Plugins\Nop.Plugin.Payments.Manual\obj\Debug\Nop.Plugin.Payments.Manual.pdb
