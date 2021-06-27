@@ -1,4 +1,4 @@
-﻿Group: اختصاصی
+Group: اختصاصی
 FriendlyName: Pallet
 SystemName: UnitOfPallet
 Version: 1.11
@@ -7,3 +7,4 @@ Author: Arsina Inc.
 DisplayOrder: 1
 FileName: Nop.Plugin.UnitOfPallet.dll
 Description: This plugin allows you to change the contents of main UnitOfPallet
+LimitedToCustomerRoles: 1

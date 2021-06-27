@@ -1,4 +1,5 @@
-﻿using Nop.Plugin.UnitOfPallet.Domain;
+﻿using Nop.Core;
+using Nop.Plugin.UnitOfPallet.Domain;
 using Nop.Web.Framework.Mvc;
 using System;
 using System.Collections.Generic;
@@ -10,12 +11,13 @@ using System.Threading.Tasks;
 
 namespace Nop.Plugin.UnitOfPallet.Model
 {
-    public class PalletProductTabModel : BaseNopModel
+    public class PalletProductTabModel :BaseEntity
     {
 
         [Key]
         public int GroupId { get; set; }
         [Display(Name = "عنوان گروه")]
+        [Required(ErrorMessage = "لطفا عنوان را  وارد کنید")]
         public string GroupTitle { get; set; }
 
         [Display(Name = "گروه اصلی")]

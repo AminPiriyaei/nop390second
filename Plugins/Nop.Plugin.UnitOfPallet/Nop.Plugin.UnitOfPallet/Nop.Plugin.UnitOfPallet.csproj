@@ -106,6 +106,7 @@
     <Compile Include="AdminTabConsumers\AdminTabStripConsumers.cs" />
     <Compile Include="Controllers\UnitOfPalletAdminController.cs" />
     <Compile Include="Data\EfStartUpTask.cs" />
+    <Compile Include="Data\PalletProductTabModelStockMap.cs" />
     <Compile Include="Data\UnitOfPalletObjectContext.cs" />
     <Compile Include="Data\UnitOfPalletProductStockMap.cs" />
     <Compile Include="DependencyRegistrar.cs" />

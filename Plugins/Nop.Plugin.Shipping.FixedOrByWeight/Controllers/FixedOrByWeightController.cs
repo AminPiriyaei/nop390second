@@ -110,7 +110,6 @@ namespace Nop.Plugin.Shipping.FixedOrByWeight.Controllers
             //save settings
             _fixedOrByWeightSettings.ShippingByWeightEnabled = value;
             _settingService.SaveSetting(_fixedOrByWeightSettings);
-
             return Json(new
             {
                 Result = true

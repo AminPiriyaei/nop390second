@@ -17,8 +17,6 @@ namespace Nop.Plugin.UnitOfPallet.Model
         {
             AvailableAttributes = new List<SelectListItem>();
         }
-
-
         [DisplayName("فیلد ویژگی اختصاصی")]
         public int SpecialAttributeId { get; set; }
         public IList<SelectListItem> AvailableAttributes { get; set; }
@@ -28,10 +26,13 @@ namespace Nop.Plugin.UnitOfPallet.Model
         public int GroupId { get; set; }
         public int? SubGroup { get; set; }
         [Display(Name = "توضیحات")]
+        [Required(ErrorMessage = "لطفا توضیحات را  وارد کنید")]
         public string Description { get; set; }
         [Display(Name = "قیمت")]
+        [Required(ErrorMessage = "لطفا قیمت را  وارد کنید")]
         public int Price { get; set; }
         [Display(Name = "وزن")]
+        [Required(ErrorMessage = "لطفا وزن  را  وارد کنید")]
         public int Weight { get; set; }
         //
         [ForeignKey("GroupId")]

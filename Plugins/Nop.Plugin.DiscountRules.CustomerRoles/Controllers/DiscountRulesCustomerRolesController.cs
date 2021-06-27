@@ -1,7 +1,4 @@
-﻿using System;
-using System.Linq;
-using System.Web.Mvc;
-using Nop.Core.Domain.Discounts;
+﻿using Nop.Core.Domain.Discounts;
 using Nop.Plugin.DiscountRules.CustomerRoles.Models;
 using Nop.Services.Configuration;
 using Nop.Services.Customers;
@@ -9,6 +6,9 @@ using Nop.Services.Discounts;
 using Nop.Services.Security;
 using Nop.Web.Framework.Controllers;
 using Nop.Web.Framework.Security;
+using System;
+using System.Linq;
+using System.Web.Mvc;
 
 namespace Nop.Plugin.DiscountRules.CustomerRoles.Controllers
 {
@@ -38,7 +38,6 @@ namespace Nop.Plugin.DiscountRules.CustomerRoles.Controllers
             var discount = _discountService.GetDiscountById(discountId);
             if (discount == null)
                 throw new ArgumentException("Discount could not be loaded");
-
             DiscountRequirement discountRequirement = null;
             if (discountRequirementId.HasValue)
             {
@@ -48,7 +47,6 @@ namespace Nop.Plugin.DiscountRules.CustomerRoles.Controllers
             }
 
             var restrictedToCustomerRoleId = _settingService.GetSettingByKey<int>(string.Format("DiscountRequirement.MustBeAssignedToCustomerRole-{0}", discountRequirementId.HasValue ? discountRequirementId.Value : 0));
-            
             var model = new RequirementModel();
             model.RequirementId = discountRequirementId.HasValue ? discountRequirementId.Value : 0;
             model.DiscountId = discountId;
@@ -58,10 +56,8 @@ namespace Nop.Plugin.DiscountRules.CustomerRoles.Controllers
             model.AvailableCustomerRoles.Add(new SelectListItem { Text = "Select customer role", Value = "0" });
             foreach (var cr in _customerService.GetAllCustomerRoles(true))
                 model.AvailableCustomerRoles.Add(new SelectListItem { Text = cr.Name, Value = cr.Id.ToString(), Selected = discountRequirement != null && cr.Id == restrictedToCustomerRoleId });
-
             //add a prefix
             ViewData.TemplateInfo.HtmlFieldPrefix = string.Format("DiscountRulesCustomerRoles{0}", discountRequirementId.HasValue ? discountRequirementId.Value.ToString() : "0");
-
             return View("~/Plugins/DiscountRules.CustomerRoles/Views/Configure.cshtml", model);
         }
 

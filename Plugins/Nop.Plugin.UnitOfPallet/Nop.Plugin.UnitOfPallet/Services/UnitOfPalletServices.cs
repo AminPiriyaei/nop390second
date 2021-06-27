@@ -1,4 +1,5 @@
 ﻿using Nop.Core;
+using Nop.Core.Caching;
 using Nop.Core.Data;
 using Nop.Data;
 using Nop.Plugin.UnitOfPallet.Data;
@@ -19,13 +20,15 @@ namespace Nop.Plugin.UnitOfPallet.Services
         private readonly IRepository<UnitOfPalletProduct> _unitOfPalletProduct;
         private readonly IEventPublisher _eventPublisher;
         private readonly IDbContext _context;
+        private readonly ICacheManager _cacheManager;
         public UnitOfPalletServices(IRepository<UnitOfPalletProduct> unitOfPalletProduct,
             IEventPublisher eventPublisher,
-            IDbContext dbContext)
+            IDbContext dbContext, ICacheManager cacheManager)
         {
             _unitOfPalletProduct = unitOfPalletProduct;
             _eventPublisher = eventPublisher;
             _context = dbContext;
+            _cacheManager = cacheManager;
         }
         public void DeleteUpProduct(UnitOfPalletProduct unitOfPalletProduct)
         {
@@ -37,20 +40,27 @@ namespace Nop.Plugin.UnitOfPallet.Services
             _eventPublisher.EntityDeleted(unitOfPalletProduct);
         }
 
+        //public IPagedList<PalletProductTabModel> GetAllGroups(int groupId = 0, int pageIndex = 0, int pageSize = int.MaxValue);
+        //{
+
+        //}
+
         public IPagedList<UnitOfPalletProduct> GetAllUpProducts(int productId = 0, int pageIndex = 0, int pageSize = int.MaxValue)
         {
-            //  var query = _unitOfPalletServices.Table;
+            //    //var query = _unitOfPalletProduct.Table;
 
-            //if (productId > 0)
-            //    query = query.Where(x => x.ProductId == productId);
-
-            //if (orderId > 0)
-            //    query = query.Where(x => x.OrderId == orderId);
-
-            //query = query.OrderBy(x => x.Id);
-
-            //paging
-            //return new PagedList<UnitOfPalletProduct>(query, pageIndex, pageSize);
+            //    //if (productId > 0)
+            //    //    query = query.Where(x => x.PalletId == productId);
+            //    ////string key = string.Format(PRODUCTATTRIBUTES_ALL_KEY, pageIndex, pageSize);
+            //    ////return _cacheManager.Get(key, () =>
+            //    {
+            //        var query = from pa in _unitOfPalletProduct.Table
+            //                    orderby pa.GroupId
+            //                    select pa;
+            //        var UnitOfPalletProducts = new PagedList<UnitOfPalletProduct>(query, pageIndex, pageSize);
+            //        return UnitOfPalletProducts;
+            //    };
+            ////});
             return null;
         }
 
@@ -88,14 +98,13 @@ namespace Nop.Plugin.UnitOfPallet.Services
         {
             //if (productId <= 0)
             //    throw new ArgumentNullException("UpProductId");
-            //var query = _unitOfPalletServices.Table
-            //query = query.Where(x => x.palletId == productId);
+            //var query = _unitOfPalletProduct.Table
+            //query = query.Where(x => x.PalletId == productId);
 
             //query = query.OrderBy(x => x.Id);
 
             //return query.ToList();
             return null;
-
         }
         public void UpdateUpProduct(UnitOfPalletProduct unitOfPalletProduct)
         {

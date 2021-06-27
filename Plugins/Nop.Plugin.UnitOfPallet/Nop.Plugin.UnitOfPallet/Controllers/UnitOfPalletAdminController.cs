@@ -63,6 +63,7 @@ namespace Nop.Plugin.UnitOfPallet.Controllers
         {
             var model = new ConfigurationModel();
             model.SpecialAttributeId = _pluginSettings.SpecialAttributeId;
+            model.PalletId = _pluginSettings.PalletId;
             model.GroupId = _pluginSettings.GroupId;
             model.Price = _pluginSettings.Price;
             model.SubGroup = _pluginSettings.SubGroup;
@@ -92,8 +93,8 @@ namespace Nop.Plugin.UnitOfPallet.Controllers
                 return Configure();
             //save settings
             _pluginSettings.SpecialAttributeId = model.SpecialAttributeId;
+            _pluginSettings.PalletId = model.PalletId;
             _pluginSettings.GroupId = model.GroupId;
-            _pluginSettings.Group = model.Group;
             _pluginSettings.SubGroup = model.SubGroup;
             _pluginSettings.Price = model.Price;
             _pluginSettings.Weight = model.Weight;
@@ -101,9 +102,10 @@ namespace Nop.Plugin.UnitOfPallet.Controllers
             _settingService.SaveSetting(_pluginSettings);
             SuccessNotification(this._localizationService.GetResource("Admin.Plugins.Saved"), true);
             return this.Configure();
-
         }
 
+
+        #region Admin Tab
         public ActionResult UnitOfPalletTab(int id)
         {
             if (!_permissionService.Authorize(StandardPermissionProvider.ManageProducts))
@@ -116,7 +118,7 @@ namespace Nop.Plugin.UnitOfPallet.Controllers
             model.PalletId = product.Id;
             return View("~/Plugins/UnitOfPallet/Views/Admin/_UnitOfPalletAdminTab.cshtml", model);
         }
-
+        #endregion
         [HttpPost]
         public virtual ActionResult UpProductsSelect(int productId, DataSourceRequest command)
         {
