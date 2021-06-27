@@ -15,6 +15,7 @@ namespace Nop.Plugin.UnitOfPallet.Domain
     public class UnitOfPalletProduct:BaseEntity
     {
         
+        [Key]
         public int PalletId {get; set;}
         public int GroupId { get; set; }
         public int? SubGroup { get; set; }

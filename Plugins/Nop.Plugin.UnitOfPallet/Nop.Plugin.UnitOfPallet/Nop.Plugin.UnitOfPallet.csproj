@@ -126,10 +126,14 @@
     <None Include="App.config" />
     <None Include="packages.config" />
     <None Include="Views\Admin\Configure.cshtml">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Views\Admin\_UnitOfPalletAdminTab.cshtml" />
-    <None Include="Views\Public\PublicInfo.cshtml" />
+    <None Include="Views\Admin\_UnitOfPalletAdminTab.cshtml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Views\Public\PublicInfo.cshtml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <Content Include="web.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

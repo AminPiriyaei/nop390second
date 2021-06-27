@@ -46,8 +46,8 @@ namespace Nop.Plugin.UnitOfPallet.AdminTabConsumers
                 var controllerName = "UnitOfPalletAdmin";
                 var routeValues = new RouteValueDictionary() { { "Namespaces", "Plugin.UnitOfPallet.Controllers" }, { "area", null }, { "id", productId } };
 
-                var htmlString = HtmlExtensions.AdminTabStripFor("موجودی کالای متغییر", actionName, controllerName, routeValues, tabEventInfo);
-                eventMessage.BlocksToRender.Add(htmlString);
+                //var htmlString = HtmlExtensions.AdminTabStripFor("موجودی کالای متغییر", actionName, controllerName, routeValues, tabEventInfo);
+                //eventMessage.BlocksToRender.Add(htmlString);
 
             }
         }

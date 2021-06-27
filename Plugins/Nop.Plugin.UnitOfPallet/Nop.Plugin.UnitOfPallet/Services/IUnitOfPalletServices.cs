@@ -26,7 +26,7 @@ namespace Nop.Plugin.UnitOfPallet.Services
         // Deletes an UnitOfPalletProduct
         void DeleteUpProduct(UnitOfPalletProduct unitOfPalletProduct);
         IPagedList<UnitOfPalletProduct> GetAllUpProducts(int productId = 0, int pageIndex = 0, int pageSize = int.MaxValue);
-        //IPagedList<PalletProductTabModel> GetAllGroups(int groupId = 0, int pageIndex = 0, int pageSize = int.MaxValue);
+        IPagedList<UnitOfPalletProduct> GetAllproductGroup(int pageIndex = 0, int pageSize = int.MaxValue);
         List<SelectListItem> GetGroupForManageNews();
         List<SelectListItem> GetSubGroupForManageNews(int groupId);
     }

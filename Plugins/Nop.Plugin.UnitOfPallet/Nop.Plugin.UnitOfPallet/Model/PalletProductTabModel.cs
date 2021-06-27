@@ -11,9 +11,8 @@ using System.Threading.Tasks;
 
 namespace Nop.Plugin.UnitOfPallet.Model
 {
-    public class PalletProductTabModel :BaseEntity
+    public class PalletProductTabModel : BaseNopModel
     {
-
         [Key]
         public int GroupId { get; set; }
         [Display(Name = "عنوان گروه")]

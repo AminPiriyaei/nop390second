@@ -70,6 +70,7 @@ namespace Nop.Plugin.UnitOfPallet.Controllers
             model.Weight = _pluginSettings.Weight;
             model.Description = _pluginSettings.Description;
             model.AvailableAttributes.Add(new SelectListItem { Text = _localizationService.GetResource("Admin.Catalog.Categories.Fields.Parent.None"), Value = "0" });
+            model.AvailableGroup.Add(new SelectListItem { Text = _localizationService.GetResource("Admin.Catalog.Categories.Fields.Parent.None"), Value = "0" });
             //product attributes
             foreach (var productAttribute in _productAttributeService.GetAllProductAttributes())
             {
@@ -79,6 +80,15 @@ namespace Nop.Plugin.UnitOfPallet.Controllers
                     Value = productAttribute.Id.ToString()
                 });            
             }
+
+            //foreach (var productGroup in _unitOfPalletServices.GetAllproductGroup())
+            //{
+            //    model.AvailableGroup.Add(new SelectListItem
+            //    {
+            //        Text = productGroup.palletProductTabModel.GroupTitle,
+            //        Value = productGroup.Id.ToString()
+            //    });
+            //}
             //model.LastUpdateDateTime = _pluginSettings.LastUpdateDateTime;
             //model.LastUpdateWidgetZone = _pluginSettings.LastUpdateWidgetZone;
 

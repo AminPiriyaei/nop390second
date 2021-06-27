@@ -40,11 +40,20 @@ namespace Nop.Plugin.UnitOfPallet.Services
             _eventPublisher.EntityDeleted(unitOfPalletProduct);
         }
 
-        //public IPagedList<PalletProductTabModel> GetAllGroups(int groupId = 0, int pageIndex = 0, int pageSize = int.MaxValue);
-        //{
-
-        //}
-
+        public IPagedList<UnitOfPalletProduct> GetAllproductGroup(int pageIndex = 0, int pageSize = int.MaxValue)
+        {
+            //string key = string.Format(PRODUCTATTRIBUTES_ALL_KEY, pageIndex, pageSize);
+            //return _cacheManager.Get(key, () =>
+            //{
+            //    var query = from pa in _unitOfPalletProduct.Table
+            //                orderby pa.Id
+            //                orderby pa.palletProductTabModel.GroupTitle
+            //                select pa;
+            //    var productGroups = new PagedList<UnitOfPalletProduct>(query, pageIndex, pageSize);
+            //    return productGroups;
+            //};
+            return null;
+        }
         public IPagedList<UnitOfPalletProduct> GetAllUpProducts(int productId = 0, int pageIndex = 0, int pageSize = int.MaxValue)
         {
             //    //var query = _unitOfPalletProduct.Table;

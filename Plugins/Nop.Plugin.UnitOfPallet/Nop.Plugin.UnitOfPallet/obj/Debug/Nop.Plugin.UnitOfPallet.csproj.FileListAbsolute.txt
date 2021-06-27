@@ -16,3 +16,5 @@ D:\Nop390\Presentation\Nop.Web\Plugins\UnitOfPallet\Nop.Plugin.UnitOfPallet.dll
 D:\Nop390\Presentation\Nop.Web\Plugins\UnitOfPallet\Nop.Plugin.UnitOfPallet.pdb
 D:\Nop390\Presentation\Nop.Web\Plugins\UnitOfPallet\Views\Admin\Configure.cshtml
 D:\Nop390\Presentation\Nop.Web\Plugins\UnitOfPallet\web.config
+D:\Nop390\Presentation\Nop.Web\Plugins\UnitOfPallet\Views\Admin\_UnitOfPalletAdminTab.cshtml
+D:\Nop390\Presentation\Nop.Web\Plugins\UnitOfPallet\Views\Public\PublicInfo.cshtml

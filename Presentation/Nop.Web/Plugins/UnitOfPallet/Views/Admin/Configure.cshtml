@@ -24,6 +24,8 @@
                         تنظیمات UnitOfWallet
                     </div>
                     <div class="panel-body">
+
+
                         <div class="form-group">
                             <div class="col-md-3">
                                 @Html.NopLabelFor(model => model.SpecialAttributeId)
@@ -34,6 +36,16 @@
                             </div>
                         </div>
 
+
+                        <div class="form-group">
+                            <div class="col-md-3">
+                                @Html.NopLabelFor(model => model.GroupId)
+                            </div>
+                            <div class="col-md-3">
+                                @Html.NopDropDownListFor(model => model.GroupId, Model.AvailableGroup)
+                                @Html.ValidationMessageFor(model => model.GroupId)
+                            </div>
+                        </div>
 
 
                         <div class="form-group">

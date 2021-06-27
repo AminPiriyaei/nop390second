@@ -1,0 +1,77 @@
+﻿@model Nop.Plugin.UnitOfPallet.Model.ConfigurationModel
+@{
+  Layout = "";
+}
+
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            افزودن کالای متغییر جدید
+        </div>
+
+        <div class="panel-body">
+            <div class="form-group">
+                <div class="col-md-3">
+                    @Html.NopLabelFor(model => model.PalletId)
+                    @Html.NopLabelFor(model => model.GroupId)
+                    @Html.NopLabelFor(model => model.SubGroup)
+                    @Html.NopLabelFor(model => model.Description)
+                    @Html.NopLabelFor(model => model.Weight)
+
+                </div>
+                <div class="col-md-9 col-lg-6">
+                    @Html.NopEditorFor(model => model.PalletId)
+                    @Html.ValidationMessageFor(model => model.PalletId)
+                    @Html.NopEditorFor(model => model.GroupId)
+                    @Html.ValidationMessageFor(model => model.GroupId)
+                    @Html.NopEditorFor(model => model.SubGroup)
+                    @Html.ValidationMessageFor(model => model.SubGroup)
+                    @Html.NopEditorFor(model => model.Description)
+                    @Html.ValidationMessageFor(model => model.Description)
+                    @Html.NopEditorFor(model => model.Weight)
+                    @Html.ValidationMessageFor(model => model.Weight)
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-3">
+                    @Html.NopLabelFor(model => model.Price)
+                </div>
+                <div class="col-md-9 col-lg-6">
+                    @Html.NopEditorFor(model => model.Price)
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-9 col-md-offset-3">
+                    <button type="button" id="addUnProduct" class="btn btn-sm btn-brand">افزودن کالا</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts
+{
+    <script>
+        $("#PalletProductTabModel_GroupId").change(function () {
+            $("#PalletProductTabModel_SubGroup").empty();
+            $.getJSON("/home/GetSubGroups/" + $("#PalletProductTabModel_GroupId :selected").val(),
+                function (data) {
+
+                    $.each(data,
+                        function () {
+                            $("#PalletProductTabModel_SubGroup").append('<option value=' + this.value + '>' + this.text + '</option>');
+
+                        });
+
+                });
+        });
+        <script src="https://cdn.ckeditor.com/4.9.2/standard/ckeditor.js"></script>
+    <script>
+
+        CKEDITOR.replace('PalletProductTabModel_Description', {
+            customConfig: '/js/Config.js'
+        });
+
+    </script>
+}
+

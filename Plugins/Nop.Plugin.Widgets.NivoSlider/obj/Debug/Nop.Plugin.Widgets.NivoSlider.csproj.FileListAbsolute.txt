@@ -37,3 +37,5 @@ D:\Nop390\Plugins\Nop.Plugin.Widgets.NivoSlider\obj\Debug\Nop.Plugin.Widgets.Niv
 D:\Nop390\Plugins\Nop.Plugin.Widgets.NivoSlider\obj\Debug\Nop.Plugin.Widgets.NivoSlider.csproj.AssemblyReference.cache
 D:\Nop390\Plugins\Nop.Plugin.Widgets.NivoSlider\obj\Debug\Nop.Plugin.Widgets.NivoSlider.csproj.CopyComplete
 D:\Nop390\Presentation\Nop.Web\Plugins\Widgets.NivoSlider\Views\Admin\Configure.cshtml
+D:\Nop390\Presentation\Nop.Web\Plugins\Widgets.NivoSlider\Views\Admin\_UnitOfPalletAdminTab.cshtml
+D:\Nop390\Presentation\Nop.Web\Plugins\Widgets.NivoSlider\Views\Public\PublicInfo.cshtml

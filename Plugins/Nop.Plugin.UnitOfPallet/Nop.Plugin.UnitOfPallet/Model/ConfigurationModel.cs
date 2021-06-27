@@ -16,6 +16,7 @@ namespace Nop.Plugin.UnitOfPallet.Model
         public ConfigurationModel()
         {
             AvailableAttributes = new List<SelectListItem>();
+            AvailableGroup = new List<SelectListItem>();
         }
         [DisplayName("فیلد ویژگی اختصاصی")]
         public int SpecialAttributeId { get; set; }
@@ -23,6 +24,7 @@ namespace Nop.Plugin.UnitOfPallet.Model
         public IList<SelectListItem> AvailableGroup { get; set; }
         [Key]
         public int PalletId { get; set; }
+        [DisplayName("گروه اختصاصی")]
         public int GroupId { get; set; }
         public int? SubGroup { get; set; }
         [Display(Name = "توضیحات")]
